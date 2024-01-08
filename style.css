@@ -13,6 +13,9 @@ body {
 }
 
 #calculator {
+    display:flex;
+    justify-content: centre;
+    align-item: centre;
     width: 328px;
     height: 550px;
     background-color: #000000;
