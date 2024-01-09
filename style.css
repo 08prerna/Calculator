@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #9796F0;
@@ -5,26 +6,21 @@ body {
 }
 
 #container {
-    width: 83.33%;
-    height: 45.83%;
-    /* width: 1000px;
-    height: 550px; */
-    margin: 20px auto;
+    width: min(100%,950px);
+    /* width: 83.33%; */
+    /* height: 45.83%; */
+    margin: 50px auto;
 }
 
 #calculator {
-    display:flex;
-    justify-content: centre;
-    align-item: centre;
     width: 328px;
     height: 550px;
     background-color: #000000;
     margin: 0 auto;
     top: 20px;
     position: relative;
-    border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgb(0, 0, 0);
-    border-radius: 10PX;
+    border-radius: 10px;
 }
 
 #result {
@@ -71,11 +67,11 @@ button:nth-child(18) {
     height: 75px;
     float: left;
     border-width: 0;
-    border-radius: 15px;
+    border-radius: 30px;
     margin: 5px;
     color: white;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .operator:active,

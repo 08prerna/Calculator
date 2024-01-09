@@ -1,28 +1,33 @@
-var number = document.getElementsByClassName('number');
-for(let i=0;i<number.length;i++){
-    number[i].addEventListener('click',function () {
-        var output=numberFormatting(getOutput());
-        console.log(output);
-        if(output!=NaN){
-            output=output+this.id;
-            console.log(output);
-            printOut(output);
+let currentValue = document.getElementById("output-value")
+let previousValue = document.getElementById("history-value")
+let buttons=document.querySelectorAll("button")
+
+let result=""
+let arr=Array.from(buttons)
+arr.forEach(button=>{
+    button.addEventListener("click",(e)=>{
+        console.log(e.target.innerHTML)
+        if(e.target.innerHTML=="="){
+            previousValue.innerHTML=result
+            result=eval(result)
+            currentValue.innerHTML=result;
         }
-    });
-}
+        else if(e.target.innerHTML=="AC"){
+            result=""
+            currentValue.innerHTML=result
+            previousValue.innerHTML=result
+        }
+        else if(e.target.innerHTML=="DEL"){
+            result=result.slice(0,-1);
+            currentValue.innerHTML=result;
+        }
+        else{
+            result+=e.target.innerHTML
+            currentValue.innerHTML=result
 
-function getOutput() {
-    return document.getElementById('output-value').innerText;
-}
-
-function numberFormatting(num) {
-    return Number(num.replace(/,/g, ''));
-}
-
-function printOut(num) {
-    
-}
-
+        }
+    })
+})
 
 
 
