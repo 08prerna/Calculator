@@ -10,7 +10,7 @@ arr.forEach(button=>{
         if(e.target.innerHTML=="="){
             previousValue.innerHTML=result
             result=eval(result)
-            currentValue.innerHTML=result;
+            currentValue.innerHTML="="+result;
         }
         else if(e.target.innerHTML=="AC"){
             result=""
