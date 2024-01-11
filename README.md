@@ -1,6 +1,6 @@
 # Calculator
 
-![Screenshot 2024-01-09 131220](https://github.com/08prerna/Calculator/assets/132763290/c9996e79-8190-4dcd-ac16-c94551250495)
+![image](https://github.com/08prerna/Calculator/assets/132763290/82a723af-40cc-4bc0-bcb9-280ca814065d)
 
 
 This is a simple calculator project created using HTML, CSS, and JavaScript.
