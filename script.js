@@ -9,8 +9,8 @@ arr.forEach(button=>{
         console.log(e.target.innerHTML)
         if(e.target.innerHTML=="="){
             previousValue.innerHTML=result
-            result=eval(result)
-            currentValue.innerHTML="="+result;
+            result="="+eval(result)
+            currentValue.innerHTML=result;
         }
         else if(e.target.innerHTML=="AC"){
             result=""
@@ -28,19 +28,3 @@ arr.forEach(button=>{
         }
     })
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
